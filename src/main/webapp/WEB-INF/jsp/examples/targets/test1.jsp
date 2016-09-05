@@ -6,12 +6,10 @@
 %>
 <!DOCTYPE html>
 <html>
-<html>
 <head>
 <base href="<%=basepath%>">
 </head>
 <body>
-	<h2>首页</h2>
-	<a href="helloWorld">Hello World</a>
+	<h2>Test 1</h2>
 </body>
 </html>
