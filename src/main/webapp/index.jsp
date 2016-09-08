@@ -6,7 +6,6 @@
 %>
 <!DOCTYPE html>
 <html>
-<html>
 <head>
 <base href="<%=basepath%>">
 </head>
