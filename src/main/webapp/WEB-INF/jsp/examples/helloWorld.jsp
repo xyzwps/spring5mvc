@@ -32,5 +32,11 @@
 		Password:<input type="password" name="password" placeholder="用户名..."><br>
 		<button type="submit">Sign In</button>
 	</form>
+	
+	
+	<hr>
+	<h2>URI Template Pattern</h2>
+	<a href="uritpl/get/owners/Angrynut/pets/98421">Map</a>
+
 </body>
 </html>
