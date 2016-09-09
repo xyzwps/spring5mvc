@@ -37,6 +37,12 @@
 	<hr>
 	<h2>URI Template Pattern</h2>
 	<a href="uritpl/get/owners/Angrynut/pets/98421">Map</a>
+	<a href="uritpl/regex/file/techmap_report.pdf">Regex</a>
+
+	<hr>
+	<h2>Path Pattern</h2>	
+	<a href="pathpattern/findPet/Jennifer/Jennifer_1234/pets/pdog_2134">Jennifer`s Pets</a>
+	<a href="pathpattern/findPet/manager/admin/pets/pdog_0001">Manager`s Pets</a>
 
 </body>
 </html>
