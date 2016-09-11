@@ -44,5 +44,12 @@
 	<a href="pathpattern/findPet/Jennifer/Jennifer_1234/pets/pdog_2134">Jennifer`s Pets</a><br>
 	<a href="pathpattern/findPet/manager/admin/pets/pdog_0001">Manager`s Pets</a>
 
+
+	<hr>
+	<h2>Matrix Variables</h2>	
+	<a href="matrix/owners/42;q=11/pets/21;q=22">Matrix</a><br>
+	<a href="matrix/pets/21">Default Value</a>
+
+
 </body>
 </html>

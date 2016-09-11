@@ -12,7 +12,7 @@
 	<!-- 
 		SpringMVC：启用 Spring MVC 注解驱动
 		 -->
-	<mvc:annotation-driven />
+	<mvc:annotation-driven enable-matrix-variables="true" />
 	
 	
 	<!-- 
