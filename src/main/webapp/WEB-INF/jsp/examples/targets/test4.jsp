@@ -10,8 +10,8 @@
 <base href="<%=basepath%>">
 </head>
 <body>
-	<h2>首页</h2>
-	<a href="helloWorld">Hello World</a>
-	<a href="helloWorld/jump?jsp=requestMapping">Request Mapping</a>
+	<h2>Test 4</h2>
+	<p>${ test }</p>
+	<p>${ petId }</p>
 </body>
 </html>

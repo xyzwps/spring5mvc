@@ -4,29 +4,29 @@ import java.util.Date;
 
 public class Pet
 {
-    private String ownerId;
-    private String petId;
+    private Integer ownerId;
+    private Integer petId;
     private String petName;
     private String petType;
     private Date birthday;
     
-    public String getOwnerId()
+    public Integer getOwnerId()
     {
         return ownerId;
     }
     
-    public Pet setOwnerId(String ownerId)
+    public Pet setOwnerId(Integer ownerId)
     {
         this.ownerId = ownerId;
         return this;
     }
     
-    public String getPetId()
+    public Integer getPetId()
     {
         return petId;
     }
     
-    public Pet setPetId(String petId)
+    public Pet setPetId(Integer petId)
     {
         this.petId = petId;
         return this;
