@@ -10,6 +10,12 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
+	<!-- 不拦截静态资源 -->
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.ico</url-pattern>
+		<url-pattern>/frameworks/*</url-pattern>
+	</servlet-mapping>
 
 
 	<context-param>

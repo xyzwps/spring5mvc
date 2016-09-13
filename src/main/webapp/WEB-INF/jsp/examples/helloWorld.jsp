@@ -8,6 +8,8 @@
 <html>
 <head>
 <base href="<%=basepath%>">
+<title>Controller</title>
+<script src="frameworks/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 	<h2>Hello World!</h2>
