@@ -13,19 +13,48 @@
 </head>
 <body>
 
-	<a href="paramAndBody/find/pet?petId=123&ownerId=986">测试@RequestParam</a>
-	<a href="paramAndBody/find/pet/map?petId=123&ownerId=986">测试@RequestParam（参数参数放进 Map 中）</a>
+	<a href="paramAndBody/find/pet?petId=123&ownerId=986">测试 @RequestParam</a>
+	<a href="paramAndBody/find/pet/map?petId=123&ownerId=986">测试 @RequestParam（参数参数放进 Map 中）</a>
 
-	<button onclick="requestBody()">测试@RequestBody</button>
+	<button onclick="requestBody()">测试 @RequestBody</button>
 
+	<button onclick="respBody('find/pet')">测试 @ResponseBody</button>
+	<button onclick="respBody('find/pet/byId')">测试 @ResponseBody 2</button>
+	<button onclick="theRest()">测试 @RestController</button>
 
 	<script>
 		function requestBody() {
 			$.ajax({  
-				url : 'paramAndBody/handle',// 跳转到 action  
+				url : 'paramAndBody/handle',// 跳转到 handler  
 				data : JSON.stringify({ petId : 123, ownerId : 987 }),  
 				type : 'put',  
 				cache : false,
+				dataType : 'text',  
+				success : function(data) {
+					alert(data);
+				},  
+				error : function(data) {  } 
+			});
+		};
+		
+		function respBody(url) {
+			$.ajax({  
+				url : 'respBody/' + url,// 跳转到 handler  
+				data : { petId : 123, ownerId : 987 },  
+				type : 'get',
+				dataType : 'text',  
+				success : function(data) {
+					alert(data);
+				},  
+				error : function(data) {  } 
+			});
+		};
+		
+		function theRest() {
+			$.ajax({  
+				url : 'theRest/find/pet/byId',// 跳转到 handler  
+				data : { petId : 123, ownerId : 987 },  
+				type : 'get',
 				dataType : 'text',  
 				success : function(data) {
 					alert(data);
