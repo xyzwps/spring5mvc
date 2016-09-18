@@ -38,6 +38,15 @@
 			<button class="btn btn-success" onclick="theRest()">测试 @RestController</button>
 		</div>
 	</div>
+	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">HttpEntity</h3>
+		</div>
+		<div class="panel-body">
+			<button class="btn btn-success" onclick="httpEntity()">测试 HttpEntity</button>
+		</div>
+	</div>
 
 	
 
@@ -53,9 +62,7 @@
 				type : 'put',  
 				cache : false,
 				dataType : 'text',  
-				success : function(data) {
-					alert(data);
-				},  
+				success : function(data) { alert(data); },  
 				error : function(data) {  } 
 			});
 		};
@@ -66,9 +73,7 @@
 				data : { petId : 123, ownerId : 987 },  
 				type : 'get',
 				dataType : 'text',  
-				success : function(data) {
-					alert(data);
-				},  
+				success : function(data) { alert(data); },  
 				error : function(data) {  } 
 			});
 		};
@@ -79,11 +84,16 @@
 				data : { petId : 123, ownerId : 987 },  
 				type : 'get',
 				dataType : 'text',  
-				success : function(data) {
-					alert(data);
-				},  
+				success : function(data) { alert(data); },  
 				error : function(data) {  } 
 			});
+		};
+		
+		function httpEntity() {
+			var url = 'httpEntity/something';
+			var data = { petId : 123, ownerId : 987 };
+			var callback = function(data) { alert(data); };
+			$.post(url, data, callback, 'text');
 		};
 	</script>
 
