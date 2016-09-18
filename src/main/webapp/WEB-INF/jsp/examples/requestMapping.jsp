@@ -9,18 +9,41 @@
 <head>
 <base href="<%=basepath%>">
 <title>Controller</title>
-<script src="frameworks/jquery/2.1.3/jquery.min.js"></script>
+<jsp:include page="/WEB-INF/jsp/common/include.jsp"/>
 </head>
 <body>
 
-	<a href="paramAndBody/find/pet?petId=123&ownerId=986">测试 @RequestParam</a>
-	<a href="paramAndBody/find/pet/map?petId=123&ownerId=986">测试 @RequestParam（参数参数放进 Map 中）</a>
+<div class="container">
 
-	<button onclick="requestBody()">测试 @RequestBody</button>
+	<h2>测试</h2>
 
-	<button onclick="respBody('find/pet')">测试 @ResponseBody</button>
-	<button onclick="respBody('find/pet/byId')">测试 @ResponseBody 2</button>
-	<button onclick="theRest()">测试 @RestController</button>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">@RequestParam 和 @RequestBody</h3>
+		</div>
+		<div class="panel-body">
+			<a href="paramAndBody/find/pet?petId=123&ownerId=986">测试 @RequestParam</a><br>
+			<a href="paramAndBody/find/pet/map?petId=123&ownerId=986">测试 @RequestParam（参数参数放进 Map 中）</a><br>
+			<button class="btn btn-success" onclick="requestBody()">测试 @RequestBody</button>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">@ResponseBody 和 @RestController</h3>
+		</div>
+		<div class="panel-body">
+			<button class="btn btn-success" onclick="respBody('find/pet')">测试 @ResponseBody</button>
+			<button class="btn btn-success" onclick="respBody('find/pet/byId')">测试 @ResponseBody 2</button>
+			<button class="btn btn-success" onclick="theRest()">测试 @RestController</button>
+		</div>
+	</div>
+
+	
+
+	
+
+</div>
 
 	<script>
 		function requestBody() {
