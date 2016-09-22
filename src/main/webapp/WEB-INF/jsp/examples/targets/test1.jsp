@@ -11,5 +11,7 @@
 </head>
 <body>
 	<h2>Test 1</h2>
+	<p>${ pet }</p>
+	<p>${ sth }</p>
 </body>
 </html>

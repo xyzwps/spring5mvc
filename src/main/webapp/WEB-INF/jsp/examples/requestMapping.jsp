@@ -22,8 +22,10 @@
 			<h3 class="panel-title">@RequestParam 和 @RequestBody</h3>
 		</div>
 		<div class="panel-body">
-			<a href="paramAndBody/find/pet?petId=123&ownerId=986">测试 @RequestParam</a><br>
-			<a href="paramAndBody/find/pet/map?petId=123&ownerId=986">测试 @RequestParam（参数参数放进 Map 中）</a><br>
+			<a href="paramAndBody/find/pet?petId=123&ownerId=986">测试 @RequestParam</a>
+			<br>
+			<a href="paramAndBody/find/pet/map?petId=123&ownerId=986">测试 @RequestParam（参数参数放进 Map 中）</a>
+			<br>
 			<button class="btn btn-success" onclick="requestBody()">测试 @RequestBody</button>
 		</div>
 	</div>
@@ -48,7 +50,14 @@
 		</div>
 	</div>
 
-	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">@ModelAttribute</h3>
+		</div>
+		<div class="panel-body">
+			<a href="modelAttr/findPet/owner/987?petId=123&sth=HelloWorld">测试方法级别的 @ModelAttribute</a><br>
+		</div>
+	</div>
 
 	
 
