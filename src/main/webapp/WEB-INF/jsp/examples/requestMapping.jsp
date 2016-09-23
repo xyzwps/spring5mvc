@@ -56,6 +56,10 @@
 		</div>
 		<div class="panel-body">
 			<a href="modelAttr/findPet/owner/987?petId=123&sth=HelloWorld">测试方法级别的 @ModelAttribute</a><br>
+			<a href="modelAttrArgs/save/ownerId/987/petId/123">测试方法参数级别的 @ModelAttribute</a><br>
+			<a href="modelAttrArgs/edit/pet/{ownerId%3A987,petId%3A123,petName%3A%22Jerry%22}">测试方法参数级别的 @ModelAttribute 2nd</a><br>
+			<!-- “%3A”表示英文冒号，“%22”表示英文双引号 -->
+			<a href="modelAttrArgs/set/pet/age/1">测试方法参数级别的 @ModelAttribute 3rd</a><br>
 		</div>
 	</div>
 

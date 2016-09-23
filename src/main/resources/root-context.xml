@@ -11,8 +11,21 @@
 	
 	<!-- 
 		SpringMVC：启用 Spring MVC 注解驱动
+			1. enable-matrix-variables="true" ： 启用矩阵变量
+			2. conversion-service="conversionService" ： 注册类型转换服务
 		 -->
-	<mvc:annotation-driven enable-matrix-variables="true" />
+	<mvc:annotation-driven enable-matrix-variables="true" conversion-service="conversionService" />
+	
+	<!-- 
+		这这里面添加自己的类型转换器
+		 -->
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters">
+			<list>
+				<bean class="com.techmap.examples.converters.JsonStrToPetConverter"/>
+			</list>
+		</property>
+	</bean>  
 	
 	
 	<!-- 
