@@ -22,7 +22,7 @@ import com.techmap.examples.entities.Pet;
 public class ModelAttrController
 {
     /**
-     * TODO 多个 @ModelAttribute 方法先运行哪一个？
+     * UNCLEAR 多个 @ModelAttribute 方法先运行哪一个？
      */
     @ModelAttribute(value = "petId")
     public Pet getPet(int petId)
