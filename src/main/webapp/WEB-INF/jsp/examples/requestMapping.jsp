@@ -62,6 +62,18 @@
 			<a href="modelAttrArgs/set/pet/age/1">测试方法参数级别的 @ModelAttribute 3rd</a><br>
 		</div>
 	</div>
+	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">@SessionAttribute 和 @RequestAttribute</h3>
+		</div>
+		<div class="panel-body">
+			<a href="sesAndReqAttr/sesAttr">测试 @SessionAttribute</a><br>
+			<a href="sesAndReqAttr/reqAttr">测试 @RequestAttribute</a><br>
+			
+			
+		</div>
+	</div>
 
 	
 

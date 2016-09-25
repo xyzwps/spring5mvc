@@ -1,5 +1,8 @@
 package com.techmap.examples.controllers;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +22,11 @@ public class HelloWorldController
     }
     
     @RequestMapping("/helloWorld/jump")
-    public String jump(@RequestParam("jsp") String jsp)
+    public String jump(HttpServletRequest req, @RequestParam("jsp") String jsp)
     {
+        HttpSession session = req.getSession();
+        session.setAttribute("sessionStr", "啦啦啦德玛西亚！");
+        
         return "/examples/" + jsp;
     }
 }

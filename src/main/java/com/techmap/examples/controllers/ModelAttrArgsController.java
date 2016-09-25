@@ -48,7 +48,7 @@ public class ModelAttrArgsController
     }
     
     /**
-     * 
+     * binding 属性（好像没见到效果）
      */
     @GetMapping("/set/pet/age/{age}")
     public String setPetAge(@ModelAttribute(value = "age", binding = false) int p)
