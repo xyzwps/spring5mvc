@@ -103,6 +103,17 @@
 		</div>
 	</div>
 	
+	
+	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Jsonp</h3>
+		</div>
+		<div class="panel-body">
+			<button class="btn btn-success" onclick="jsonp()">测试 Jsonp</button>
+		</div>
+	</div>
+	
 
 </div>
 
@@ -146,6 +157,24 @@
 			var data = { petId : 123, ownerId : 987 };
 			var callback = function(data) { alert(data); };
 			$.post(url, data, callback, 'text');
+		};
+		
+		
+		function myFunc(data)
+		{
+			alert(data.name + " is a " + data.type + ".");
+		};
+		
+		/**
+		 * jsonp 的原理是把请求来的数据作为参数传到 callback 函数中，然后调用 callback 方法
+		 */
+		function jsonp() 
+		{
+		    var url = 'jsonp?callback=myFunc'; // 提供 jsonp 服务的 url 地址（不管是什么类型的地址，最终生成的返回值都是一段javascript代码）
+		    var script = document.createElement('script');  // 创建script标签，设置其属性
+		    script.setAttribute('src', url);
+		    // 把script标签加入head，此时调用开始
+		    document.getElementsByTagName('head')[0].appendChild(script); 
 		};
 	</script>
 
