@@ -28,7 +28,7 @@ public class CookieAndHeaderController
      * 获取请求头的值
      */
     @RequestMapping("/reqHeader")
-    public ModelAndView displayHeaderInfo(
+    public ModelAndView reqHeader(
             @RequestHeader("Accept-Encoding") String encoding, 
             @RequestHeader("Accept") List<String> accept)
     {
