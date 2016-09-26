@@ -25,7 +25,7 @@ public class CookieAndHeaderController
     }
     
     /**
-     * 获取请求头的值
+     * 使用@RequestHeader获取请求头的值
      */
     @RequestMapping("/reqHeader")
     public ModelAndView reqHeader(

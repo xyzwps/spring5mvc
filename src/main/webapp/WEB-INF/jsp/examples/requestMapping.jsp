@@ -84,6 +84,25 @@
 		</div>
 	</div>
 	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">@InitBinder 和 WebDataBinder</h3>
+		</div>
+		<div class="panel-body">
+			<a href="webDataBinder//ib/date/2015-12-31">测试 @InitBinder</a><br>
+		</div>
+	</div>
+	
+	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">@ControllerAdvice 和 @RestControllerAdvice</h3>
+		</div>
+		<div class="panel-body">
+			<a href="myCtrl">测试 @ControllerAdvice</a><br>
+		</div>
+	</div>
+	
 
 </div>
 
