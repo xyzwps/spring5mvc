@@ -68,13 +68,21 @@
 			<h3 class="panel-title">@SessionAttribute 和 @RequestAttribute</h3>
 		</div>
 		<div class="panel-body">
-			<a href="sesAndReqAttr/sesAttr">测试 @SessionAttribute</a><br>
-			<a href="sesAndReqAttr/reqAttr">测试 @RequestAttribute</a><br>
-			
-			
+			<a href="sesAndReqAttr/sesAttr">测试 @SessionAttribute（获取会话属性）</a><br>
+			<a href="sesAndReqAttr/reqAttr">测试 @RequestAttribute（获取来自拦截器、过滤器等的请求属性）</a><br>
 		</div>
 	</div>
-
+	
+	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">@CookieValue 和 @RequestHeader</h3>
+		</div>
+		<div class="panel-body">
+			<a href="cookieAndHeader/jSessionId">测试 @CookieValue（获取 cookie 值）</a><br>
+			<a href="cookieAndHeader/reqHeader">测试 @RequestHeader（获取请求头属性）</a><br>
+		</div>
+	</div>
 	
 
 </div>
