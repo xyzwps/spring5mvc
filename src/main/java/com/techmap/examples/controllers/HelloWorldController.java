@@ -5,8 +5,8 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloWorldController
@@ -21,8 +21,8 @@ public class HelloWorldController
         return "/examples/helloWorld";
     }
     
-    @RequestMapping("/helloWorld/jump")
-    public String jump(HttpServletRequest req, @RequestParam("jsp") String jsp)
+    @RequestMapping("/helloWorld/jump/{path}")
+    public String jump(HttpServletRequest req, @PathVariable("path") String jsp)
     {
         HttpSession session = req.getSession();
         session.setAttribute("sessionStr", "啦啦啦德玛西亚！");

@@ -15,7 +15,9 @@
 			1. enable-matrix-variables="true" ： 启用矩阵变量
 			2. conversion-service="conversionService" ： 注册类型转换服务
 		 -->
-	<mvc:annotation-driven enable-matrix-variables="true" conversion-service="conversionService" />
+	<mvc:annotation-driven enable-matrix-variables="true" conversion-service="conversionService" >
+		<mvc:async-support default-timeout="6000"/><!-- 启用异步请求处理 -->
+	</mvc:annotation-driven>
 	
 	<!-- 
 		这这里面添加自己的类型转换器
@@ -37,6 +39,12 @@
 		<property name="prefix" value="/WEB-INF/jsp" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+	
+	<!-- 
+		文件上传 
+		-->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 
 
 </beans>

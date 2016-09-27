@@ -12,6 +12,7 @@
 <body>
 	<h2>首页</h2>
 	<a href="helloWorld">Hello World</a>
-	<a href="helloWorld/jump?jsp=requestMapping">Request Mapping</a>
+	<a href="helloWorld/jump/requestMapping">Request Mapping</a>
+	<a href="helloWorld/jump/asyncRequest">Asynchronous Request Processing</a>
 </body>
 </html>
