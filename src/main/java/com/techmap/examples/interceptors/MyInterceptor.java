@@ -19,12 +19,6 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
  * <li>afterCompletion(..) 在完成请求结束后调用。</li>
  * </ol>
  * 这三个方法为预处理和后处理提供了足够的灵活性。
- * <p/>
- * 如果有多个拦截器的话，可以通过实现 Ordered 接口来为拦截器设置顺序。
- * <p/>
- * 这些拦截器要配置在 org.springframework.web.servlet.mvc.method.annotation 包下的
- * RequestMappingHandlerMapping 中（虽然文档这么说，但似乎不生效，所以这里配置在了 
- * &lt;mvc:interceptors&gt; 中）。
  * 
  * @author Angrynut
  *
