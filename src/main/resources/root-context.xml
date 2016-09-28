@@ -47,11 +47,13 @@
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 
 
-	
+	<!-- 
+		配置处理方法的拦截器
+		 -->
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/test/interceptor"/>
-			<bean class="com.techmap.examples.interceptors.MyInterceptor">
+			<bean class="com.techmap.examples.interceptors.TimeBasedAccessInterceptor">
 				<property name="openingTime" value="9"/>
 				<property name="closingTime" value="17"/>
 			</bean>

@@ -19,13 +19,15 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
  * <li>afterCompletion(..) 在完成请求结束后调用。</li>
  * </ol>
  * 这三个方法为预处理和后处理提供了足够的灵活性。
+ * <p/>
+ * 这里把它配置在了 &lt;mvc:interceptors/&gt; 中
  * 
  * @author Angrynut
  *
  */
-public class MyInterceptor extends HandlerInterceptorAdapter
+public class TimeBasedAccessInterceptor extends HandlerInterceptorAdapter
 {
-    private static Logger log = Logger.getLogger(MyInterceptor.class);
+    private static Logger log = Logger.getLogger(TimeBasedAccessInterceptor.class);
     
     private int openingTime;
     private int closingTime;
