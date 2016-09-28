@@ -72,5 +72,5 @@ public class AsyncController
         };
     }
     
-    // TODO DeferredResult
+    // TODO 实现 DeferredResult
 }

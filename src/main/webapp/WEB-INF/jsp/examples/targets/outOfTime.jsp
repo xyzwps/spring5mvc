@@ -8,12 +8,9 @@
 <html>
 <head>
 <base href="<%=basepath%>">
+<title>请在上班时间登录</title>
 </head>
 <body>
-	<h2>首页</h2>
-	<a href="helloWorld">Hello World</a>
-	<a href="helloWorld/jump/requestMapping">Request Mapping</a>
-	<a href="helloWorld/jump/asyncRequest">Asynchronous Request Processing</a>
-	<a href="helloWorld/jump/interceptors">Interceptors</a>
+	<h2>请在上班时间登录</h2>
 </body>
 </html>

@@ -10,6 +10,12 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
+/**
+ * 这是一个原生的过滤器
+ * 
+ * @author Angrynut
+ *
+ */
 @WebFilter(filterName = "myFilter", description = "测试过滤器", urlPatterns = { "/sesAndReqAttr/reqAttr" })
 public class MyFilter implements Filter
 {

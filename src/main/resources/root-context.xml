@@ -47,4 +47,15 @@
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 
 
+	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/test/interceptor"/>
+			<bean class="com.techmap.examples.interceptors.MyInterceptor">
+				<property name="openingTime" value="9"/>
+				<property name="closingTime" value="17"/>
+			</bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
 </beans>
