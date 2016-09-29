@@ -34,7 +34,11 @@
 	<!-- 
 		SpringMVC：配置 ViewResolver（视图解析器） 
 		-->
-	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+	<bean class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="order" value="0"/>
+		<property name="location" value="classpath:mvc-views.xml"/>
+	</bean>
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/jsp" />
 		<property name="suffix" value=".jsp" />
