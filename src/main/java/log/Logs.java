@@ -1,3 +1,4 @@
+package log;
 
 public class Logs
 {
