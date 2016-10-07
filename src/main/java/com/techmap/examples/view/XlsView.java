@@ -19,7 +19,7 @@ import org.springframework.web.servlet.view.document.AbstractXlsView;
  * <p/>
  * Spring 提供的其他相关支持见包 org.springframework.web.servlet.view.*
  * <p/>
- * 更多示例见 <a href="http://poi.apache.org/spreadsheet/quick-guide.html">Apache POI 官方文档</a>
+ * 更多示 Xls 文件操纵例见 <a href="http://poi.apache.org/spreadsheet/quick-guide.html">Apache POI 官方文档</a>
  * 
  * @author Angrynut
  *

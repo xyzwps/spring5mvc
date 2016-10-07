@@ -26,6 +26,21 @@
 			<br>
 		</div>
 	</div>
+	
+	
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">重定向</h3>
+		</div>
+		<div class="panel-body">
+			<a href="redict/get/pet/Tom">重定向视图 —— RedirectView</a>
+			<hr>
+			<a href="redict/target">重定向目标</a>
+			<br>
+		</div>
+	</div>
+	
+	
 
 </div>
 

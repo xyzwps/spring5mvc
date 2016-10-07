@@ -11,6 +11,7 @@
 </head>
 <body>
 	<h2>Test 4</h2>
+	<p>${ sth }</p>
 	<p>${ test }</p>
 	<p>${ petId }</p>
 </body>
