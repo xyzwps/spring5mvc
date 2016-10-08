@@ -33,6 +33,7 @@
 			<h3 class="panel-title">重定向</h3>
 		</div>
 		<div class="panel-body">
+			<a href="redict/get/owner/987">重定向前缀 —— redirect:</a>
 			<a href="redict/get/pet/Tom">重定向视图 —— RedirectView</a>
 			<hr>
 			<a href="redict/target">重定向目标</a>
