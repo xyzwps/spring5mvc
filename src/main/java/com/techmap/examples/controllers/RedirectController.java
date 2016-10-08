@@ -23,7 +23,8 @@ public class RedirectController
     /**
      * 使用重定向视图
      * <p/>
-     * 不知道为什么，在把项目部署到 Tomcat 的根目录下，重定向视图才正确跳转
+     * 不知道为什么，在<a href="http://hyj0903.blog.163.com/blog/static/309065522014999496306/">
+     * 把项目部署到 Tomcat 的根目录下</a>，重定向视图才正确跳转
      */
     @GetMapping("/get/pet/{petName}")
     public ModelAndView getPet(@PathVariable("petName") String petName)
