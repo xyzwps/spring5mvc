@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
 /**
@@ -36,18 +37,18 @@ public class RedirectController
      * <a href="http://hyj0903.blog.163.com/blog/static/309065522014999496306/">这里</a>
      */
     @GetMapping("/get/pet/{petName}")
-    public ModelAndView getPet(HttpServletRequest request, @PathVariable("petName") String petName)
+    public ModelAndView getPet(HttpServletRequest request, @PathVariable("petName") String petName, final RedirectAttributes redirectAttributes)
     {
         ModelAndView mav = new ModelAndView();
         
         log.info("\n\t--> Pet Name : " + petName);
         log.info("\n\t--> Servlet Path : " + request.getServletPath());
         log.info("\n\t--> Context Path : " + request.getContextPath());
-
-        mav.addObject("sth", petName);
-        
         
         RedirectView rv = new RedirectView(decorateContextPath(request.getContextPath()) + "/redict/target", false);
+        
+        redirectAttributes.addAttribute("sth", petName);
+        redirectAttributes.addFlashAttribute("sth", "Pet Name : " + petName);
         
         mav.setView(rv);
         
@@ -58,9 +59,12 @@ public class RedirectController
      * 使用重定向前缀
      */
     @GetMapping("/get/owner/{ownerId}")
-    public String getOwner(@PathVariable("ownerId") int id)
+    public String getOwner(@PathVariable("ownerId") int id, final RedirectAttributes redirectAttributes)
     {
         log.debug("\n\t--> Owner ID : " + id);
+        
+        redirectAttributes.addAttribute("sth", id);
+        redirectAttributes.addFlashAttribute("sth", "Owner ID : " + id);
         
         return "redirect:/redict/target";
     }
