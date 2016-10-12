@@ -16,5 +16,6 @@
 	<a href="helloWorld/jump/asyncRequest">Asynchronous Request Processing</a>
 	<a href="helloWorld/jump/interceptors">Interceptors</a>
 	<a href="helloWorld/jump/view">Views</a>
+	<a href="helloWorld/jump/tag">Tags</a>
 </body>
 </html>
