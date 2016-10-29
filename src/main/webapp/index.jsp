@@ -17,5 +17,6 @@
 	<a href="helloWorld/jump/interceptors">Interceptors</a>
 	<a href="helloWorld/jump/view">Views</a>
 	<a href="helloWorld/jump/builduri">Build URIs</a>
+	<a href="helloWorld/jump/multipart">Multipart File Upload</a>
 </body>
 </html>
